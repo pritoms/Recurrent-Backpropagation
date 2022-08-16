@@ -30,7 +30,7 @@ The most commonly discussed RNNs at this time are LSTMs and GRUs. These are typi
 
 The key to RNNs is that they have a loop in their structure. Any input is passed through a hidden layer and the output of this hidden layer is also passed into the next iteration of the hidden layer. The output of the RNN is determined by the output of the last iteration of the hidden layer. This structure is shown below:
 
-![RNN](rnn-unrolled.png)
+![RNN](rnn_unrolled.png)
 
 The cell state and hidden state are both considered hidden states, but they can be computed by different means. The cell state is computed by a simple summation of weighted inputs, whereas the hidden state is computed using a nonlinear activation function. These two states are combined using a gating mechanism, which is described below.
 
